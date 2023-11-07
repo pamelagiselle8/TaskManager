@@ -5,8 +5,24 @@ function agregarTarea() {
         alert("Debe ingresar una tarea.");
     }
     else {
+        let tareaContenedor = document.createElement("div");
+        tareaContenedor.classList.add("tarea-contenedor");
+
+        let icono = document.createElement("i");
+        icono.classList.add("fa-regular", "fa-square");
+        tareaContenedor.appendChild(icono);
+        
+
         let tarea = document.createElement("li");
         tarea.innerHTML = input.value;
-        lista.appendChild(tarea);
+        tareaContenedor.appendChild(tarea);
+
+        lista.appendChild(tareaContenedor);
+
+        input.value = '';
     }
+}
+
+function completarTarea() {
+
 }

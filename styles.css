@@ -66,27 +66,27 @@ button {
 }
 
 ul li {
+    width: 350px;
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 10px;
     user-select: none;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
 }
 
-ul li::before {
+/* ul li::before {
     content: '';
     position: absolute;
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    /* unchecked png */
     background-image: url();
     background-size: cover;
     background-position: center;
     top: 12px;
     left: 8px;
-}
+} */
 
 ul li.hecho {
     color: #555;
@@ -94,6 +94,48 @@ ul li.hecho {
 }
 
 ul li.hecho::before {
-    /* checked png */
-    background-image: url();
+    
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+/* Estilos para el contenedor de la tarea */
+.tarea-contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tarea-contenedor i {
+    margin-right: 10px;
+}
+
+#lista {
+    width: max-content;
+}
+
+/* Unchecked */
+.fa-regular, .fa-square {
+    padding: 12px 0px 12px 50px;
+    cursor: pointer;
+}
+
+/* Checked */
+.fa-regular, .fa-square-check {
+    padding: 12px 0px 12px 50px;
+    cursor: pointer;
 }

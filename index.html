@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/1cf29c88d4.js" crossorigin="anonymous"></script>
 
         <!-- Script JS -->
-        <script src=“script.js”></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -26,16 +26,7 @@
                     <input type="text" id="input" placeholder="Ingrese una nueva tarea">
                     <button id="boton" onclick="agregarTarea()">Agregar</button>
                 </div>
-                <ul id="lista">
-                    <!-- <li class="hecho">
-                        <i class="fa-regular fa-square-check"></i>
-                        Task 1
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-square"></i>
-                        Task 2
-                    </li> -->
-                </ul>
+                <ul id="lista" onclick="completarTarea"></ul>
             </div>
         </div>
     </body>
