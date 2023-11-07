@@ -1,8 +1,6 @@
-const input = document.getElementById("input");
-const lista = document.getElementById("lista");
-const boton = document.getElementById("boton");
-
 function agregarTarea() {
+    const input = document.getElementById("input");
+    const lista = document.getElementById("lista");
     if (input.value === '') {
         alert("Debe ingresar una tarea.");
     }
@@ -12,5 +10,3 @@ function agregarTarea() {
         lista.appendChild(tarea);
     }
 }
-
-boton.addEventListener('click', agregarTarea());
