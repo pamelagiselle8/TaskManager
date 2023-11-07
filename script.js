@@ -1,6 +1,6 @@
 function agregarTarea() {
     const input = document.getElementById("input");
-    let lista = document.getElementById("lista");
+    const lista = document.getElementById("lista");
     if (input.value === '') {
         alert("Debe ingresar una tarea.");
     }
@@ -24,7 +24,15 @@ function agregarTarea() {
 }
 
 function borrarCompletados() {
-    
+    const lista = document.getElementById("lista");
+    const checkboxes = lista.querySelectorAll("input[type=checkbox]");
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            // Borrar el contenedor del checkbox
+            lista.removeChild(checkbox.parentNode);
+        }
+    });
 }
 
 function borrarTodos() {

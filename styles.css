@@ -74,25 +74,11 @@ ul li {
     position: relative;
 }
 
-/* ul li::before {
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-} */
-
 ul li.hecho {
     color: #555;
     text-decoration: line-through;
 }
 
-/* Estilos para el contenedor de la tarea */
 .tarea-contenedor {
     display: flex;
     align-items: center;
